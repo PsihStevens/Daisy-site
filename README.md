@@ -1,4 +1,4 @@
-![](http://sheep.fish/wp-content/themes/sheepfish/images/logo2.png)
+<!-- ![](http://sheep.fish/wp-content/themes/sheepfish/images/logo2.png) -->
 # Sheep.Fish base front v0.2.0
 
 > The initial layout from [Sheep.Fish](http://sheep.fish) team
