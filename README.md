@@ -1,7 +1,7 @@
 <!-- ![](http://sheep.fish/wp-content/themes/sheepfish/images/logo2.png) -->
 # Base front v0.2.0
 
-> The initial layout from [Sheep.Fish](http://sheep.fish) team
+<!-- > The initial layout from [Sheep.Fish](http://sheep.fish) team -->
 
 
 ## Features
