@@ -134,7 +134,18 @@ $(document).ready(function() {
 
     $('.footer_placeholder').height($('.footer').outerHeight());
 
-goTo()
+    goTo();
+
+    $('.header-baner-js').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // autoplay: true,
+        infinite: false,
+        pauseOnHover: false,
+        autoplaySpeed: 3000,
+        speed: 1000,
+        dots: true,
+    });
 
 });
 

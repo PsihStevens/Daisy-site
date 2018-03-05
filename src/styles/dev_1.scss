@@ -1,0 +1,169 @@
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.block-1{
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 1px;
+    position: relative;
+
+    .header-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        color: #fff;
+    }
+    .header-baner{
+        position: relative;
+        z-index: 5;
+    }
+    .wrapp-logo{
+        width: 100%;
+        text-align: center;
+        padding-top: 140px;
+        margin-bottom: 117px;
+    }
+    .title{
+        text-align: center;
+        width: 100%;
+    }
+    .title-top{
+        margin-bottom: 60px;
+        padding-bottom: 35px;
+        position: relative;
+
+        &:after{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -45px;
+            content: '';
+            width: 90px;
+            height: 2px;
+            background-color: white;
+        }
+    }
+    .title-mid{
+        margin-bottom: 35px;
+
+        p{
+            text-transform: uppercase;
+        }
+    }
+    .title-bott{
+        margin-bottom: 75px;
+    }
+    .wrapp-links{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        a{
+            width: 222px;
+            height: 42px;
+            border: 2px solid white;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-weight: 300;
+            margin: 0 20px;
+        }
+    }
+    .slick-dots li button:before{
+        font-size: 30px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        opacity: .4;
+        color: black;
+    }
+    .slick-dots li button:after{
+        font-size: 16px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    .slick-dots li.slick-active button:before{
+        opacity: .4;
+        color: black;
+    }
+    .slick-dots li.slick-active button:after{
+        opacity: 0;
+    }
+    .slick-dots li{
+        margin: 0 10px;
+    }
+    .slick-prev{
+        left: 20%;
+        top: 61%;
+        z-index: 1;
+        width: 30px;
+        height: 26px;
+        opacity: 0.6;
+        background-color: #5e5b5c;
+        border-radius: 0px 13px 13px 0px;
+
+        &:after{
+            position: absolute;
+            content: '';
+            height: 12px;
+            width: 12px;
+            top: 7px;
+            left: 10px;
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+            transform: rotate(45deg);
+        }
+    }
+    .slick-next{
+        right: 20%;
+        top: 61%;
+        z-index: 1;
+        width: 30px;
+        height: 26px;
+        opacity: 0.6;
+        background-color: #5e5b5c;
+        border-radius: 13px 0 0 13px;
+
+        &:after{
+            position: absolute;
+            content: '';
+            height: 12px;
+            width: 12px;
+            top: 7px;
+            right: 10px;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            transform: rotate(-45deg);
+        }
+    }
+}

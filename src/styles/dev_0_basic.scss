@@ -1,21 +1,76 @@
 /* base styles*/
-*,*:before, *:after{box-sizing:border-box;outline:none;}
-*,body,html{-webkit-text-size-adjust: none;-webkit-appearance: none;}
-html{height:100%;}
-body{min-height:100%;width:100%;min-width:320px;font-family:arial,sans-serif;background:#fff;color:#3d3d3d;position:relative;font-size: 16px;line-height: 1;}
-img{vertical-align:bottom;border:0;max-width:100%;}
+*,*:before, *:after{
+    box-sizing:border-box;
+    outline:none;
+}
+*,body,html{
+    -webkit-text-size-adjust: none;
+    -webkit-appearance: none;
+}
+html{
+    height:100%;
+}
+body{
+    min-height:100%;
+    width:100%;
+    min-width:320px;
+    font-family:arial,sans-serif;
+    background:#fff;
+    color:#3d3d3d;
+    position:relative;
+    font-size: 16px;
+    line-height: 1;
+}
+img{
+    vertical-align:bottom;
+    border:0;
+    max-width:100%;
+}
 
 /* helping adds*/
-.clear{clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;}
-.cfix:after{content: '';display: block;height: 0;font-size: 1px;line-height: 1px;overflow: hidden;clear: both;}
-.hidden-block{position:absolute;left:-99999em;top:-99999em;}
+.clear{
+    clear:both;
+    font-size:1px;
+    line-height:1px;
+    height:0;
+    overflow:hidden;
+}
+.cfix:after{
+    content: '';
+    display: block;
+    height: 0;
+    font-size: 1px;
+    line-height: 1px;
+    overflow: hidden;
+    clear: both;
+}
+.hidden-block{
+    position:absolute;
+    left:-99999em;
+    top:-99999em;
+}
 
 /* /helping adds*/
 
 /* wraps styling*/
 
-.mbox{max-width:1024px;width:100%;margin:0 auto;position:relative;z-index:1;}
-.mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
+.mbox{
+    max-width:1170px;
+    width:100%;
+    padding: 0 15px;
+    margin:0 auto;
+    position:relative;
+    z-index:1;
+}
+.mbox:after{
+    content:"";
+    clear:both;
+    font-size:1px;
+    line-height:1px;
+    height:0;
+    overflow:hidden;
+    display:block;
+}
 
 /* /wraps styling*/
 
@@ -47,6 +102,10 @@ input, textarea{
 
 //  example->    @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 
+@include font-face('HelveticaNeueCyr', 'HelveticaNeueCyr-Light', 300, normal);
+@include font-face('HelveticaNeueCyr', 'HelveticaNeueCyr-Bold', 700, normal);
+@include font-face('HelveticaNeueCyr', 'HelveticaNeueCyr-Roman', 400, normal);
+
 /*/fonts*/
 
 /* /base styles */
@@ -54,7 +113,11 @@ input, textarea{
 /* ctext */
 
     .ctext{
-        h1, h2, h3, h4, h5, h6{line-height: 1.25;margin-bottom: 15px;font-weight: 700;}
+        h1, h2, h3, h4, h5, h6{
+            line-height: 1.25;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
         h1{font-size: 36px;}
         h2{font-size: 32px;}
         h3{font-size: 28px;}
@@ -70,9 +133,14 @@ input, textarea{
 
 /* styles for wp-admin panel */
 body{
+    font-family: HelveticaNeueCyr;
     &.customize-support{
         .wp-panel-show{top:32px;} //fixed elements (if their has top:0) must has class .wp-panel-show
     }
+}
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
 }
 @media screen and (max-width: 782px){
 

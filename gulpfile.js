@@ -140,7 +140,7 @@ gulp.task('watch', function(){
         gulp.start('styles');
     });
     gulp.watch('src/scripts/**/*.js', function(event, cb) {
-        gulp.start('scripts').pipe(reload({stream: true}));
+        gulp.start('scripts');
     });
     gulp.watch('src/**/*.html', function(event, cb) {
         gulp.start('pre-html');
@@ -149,7 +149,7 @@ gulp.task('watch', function(){
         gulp.start('fonts');
     });
     gulp.watch('src/images/**/*',  function(event, cb) {
-      gulp.start('images').pipe(reload({stream: true}));
+      gulp.start('images');
   });
 
     gulp.watch([
