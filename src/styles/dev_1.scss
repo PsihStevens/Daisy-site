@@ -8,6 +8,39 @@ a{
 
 
 
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+
+    .wrapp{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .wrapp-menu{
+        display: flex;
+        align-items: center;
+        
+        li{
+            margin-left: 30px;
+        }
+        a{
+            color: white;
+            font-size: 10px;
+            font-weight: 400;
+            text-transform: uppercase;    
+        }
+    }
+}
+
+
+
 .block-1{
     width: 100%;
     max-width: 1920px;
@@ -19,9 +52,10 @@ a{
     .header-content{
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        width: 100%;
+        max-width: 1170px;
+        left: 50%;
+        margin-left: -585px;
         z-index: 10;
         color: #fff;
     }
@@ -87,6 +121,12 @@ a{
             margin: 0 20px;
         }
     }
+    .slick-dotted.slick-slider{
+        margin-bottom: 50px;
+    }
+    .slick-dots{
+        bottom: -40px;
+    }
     .slick-dots li button:before{
         font-size: 30px;
         line-height: 20px;
@@ -122,14 +162,16 @@ a{
     .slick-dots li{
         margin: 0 10px;
     }
-    .slick-prev{
-        left: 20%;
+    .my-slick-prev{
+        position: absolute;
+        left: 0;
         top: 61%;
         z-index: 1;
         width: 30px;
         height: 26px;
         opacity: 0.6;
         background-color: #5e5b5c;
+        border: none;
         border-radius: 0px 13px 13px 0px;
 
         &:after{
@@ -144,8 +186,9 @@ a{
             transform: rotate(45deg);
         }
     }
-    .slick-next{
-        right: 20%;
+    .my-slick-next{
+        position: absolute;
+        right: 0;
         top: 61%;
         z-index: 1;
         width: 30px;
@@ -153,6 +196,7 @@ a{
         opacity: 0.6;
         background-color: #5e5b5c;
         border-radius: 13px 0 0 13px;
+        border: none;
 
         &:after{
             position: absolute;
@@ -164,6 +208,30 @@ a{
             border-bottom: 2px solid white;
             border-right: 2px solid white;
             transform: rotate(-45deg);
+        }
+    }
+    .header-socials{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 10;
+
+        .mbox{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .social-icon-wrapp{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .opem-socials{
+        .glide-icon{
+            position: absolute;
+            transition: all 0.3s ease-in-out;
         }
     }
 }

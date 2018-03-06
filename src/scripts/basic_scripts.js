@@ -147,6 +147,7 @@ $(document).ready(function() {
         dots: true,
     });
 
+
 });
 
 $(window).resize(function() {
