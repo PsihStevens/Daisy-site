@@ -139,7 +139,7 @@ $(document).ready(function() {
     $('.header-baner-js').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         infinite: false,
         pauseOnHover: false,
         autoplaySpeed: 3000,
