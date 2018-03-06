@@ -503,44 +503,8 @@ a{
 
 
 .services-block-1{
-    width: 100%;
     background: url('../images/services-bg-bl-1.jpg') top center no-repeat;
-    background-size: cover;
-    overflow: hidden;
-
-    .title{
-        width: 100%;
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-        padding: 130px 0 35px;
-        margin-bottom: 40px;
-        position: relative;
-
-        &:after{
-            position: absolute;
-            content: '';
-            bottom: 0;
-            left: 50%;
-            margin-left: -45px;
-            width: 90px;
-            height: 2px;
-            background-color: white;
-        }
-    }
-    .wrapp-small-icon{
-        margin-bottom: 75px;
-        display: flex;
-        justify-content: center;
-    }
-    .icon{
-        margin: 0 10px;
-    }
 }
-
-
-
-
 
 .services-block-2{
     width: 100%;
@@ -637,5 +601,117 @@ a{
             color: #bb69a2;
             text-decoration: underline;
         }
+    }
+}
+
+
+.news-header-block{
+    background: url('../images/news-bg-header.jpg') top center no-repeat;
+}
+.news-content{
+    width: 100%;
+
+    .core-news{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+    .news-item{
+        width: 33%;
+        position: relative;
+        padding: 15px;
+    }
+    .wrapp-img{
+        margin-bottom: 20px;
+    }
+    .news-title{
+        margin-bottom: 10px;
+    }
+    .news-text{
+        margin-bottom: 20px;
+        line-height: 16px;
+    }
+    .news-link{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 12px;
+
+        a{
+            color: #bb69a2;
+        }
+    }
+    .news-date{
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        width: 33px;
+        height: 33px;
+        background-color: #bb69a2;
+        font-size: 10px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        padding: 3px 7px;
+
+        .mont{
+            border-bottom: 1px solid white;
+            padding-bottom: 2px;
+            margin-bottom: 3px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services-block-1,
+.news-header-block{
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+
+    .title{
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        padding: 130px 0 35px;
+        margin-bottom: 40px;
+        position: relative;
+
+        &:after{
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 50%;
+            margin-left: -45px;
+            width: 90px;
+            height: 2px;
+            background-color: white;
+        }
+    }
+    .wrapp-small-icon{
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: center;
+    }
+    .icon{
+        margin: 0 10px;
     }
 }
