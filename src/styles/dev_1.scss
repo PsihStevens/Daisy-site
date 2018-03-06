@@ -46,7 +46,6 @@ a{
     max-width: 1920px;
     margin: auto;
     overflow: hidden;
-    padding-bottom: 1px;
     position: relative;
 
     .header-content{
@@ -216,16 +215,29 @@ a{
         bottom: 0;
         z-index: 10;
 
-        .mbox{
+        .wrapp-socials{
             display: flex;
             flex-direction: row-reverse;
+            overflow: hidden;
         }
         .social-icon-wrapp{
-            width: 40px;
-            height: 40px;
+            // width: 40px;
+            // height: 40px;
+            background: #fff;
+            margin-left: 40px;
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
+            position: relative;
+        }
+        .socials-icon{
+            z-index: 5;
+        }
+        .instagram-icon{
+            z-index: 3;
+        }
+        .facebook-icon{
+            z-index: 1;
         }
     }
     .opem-socials{
