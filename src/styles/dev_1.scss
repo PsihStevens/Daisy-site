@@ -611,6 +611,53 @@ a{
 .news-content{
     width: 100%;
 
+    .wrapp-news-item{
+        width: 100%;
+        padding-top: 65px;
+    }
+    .top-news{
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+
+        .long-item{
+            max-width: 760px;
+
+            .top-news-item-text{
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+        .top-news-item-text{
+            position: absolute;
+            bottom: 35px;
+            left: 40px;
+            color: white;
+            width: 100%;
+            max-width: 200px;
+        }
+        .title{
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            line-height: 36px;
+
+            h3{
+                background-color: rgba(34, 31, 31, 0.9);
+                padding: 5px;
+                padding: 5px 10px;
+                display: inline-block;
+            }
+        }
+        .text{
+            line-height: 24px;
+        }
+    }
+    .top-news-item{
+        position: relative;
+        padding: 15px;
+        width: 100%;
+        max-width: 375px;
+    }    
     .core-news{
         display: flex;
         justify-content: space-between;
@@ -665,10 +712,230 @@ a{
 }
 
 
+.news-in-content-block{
+    width: 100%;
+
+    .wrapp-news{
+        padding-top: 135px;
+        margin-bottom: 120px;
+    }
+    .title{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        position: relative;
+
+        &:after{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            width: 90px;
+            height: 2px;
+            background-color: #221f1f;
+        }
+        h3{
+            background: linear-gradient(to right, rgba(186,105,162,1) 0%, rgba(186,105,162,1) 30%, rgba(94,75,139,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+    }
+    .sub-title{
+        margin-bottom: 30px;
+        color: #221f1f;
+        line-height: 24px;
+        max-width: 60%;
+    }
+    .wrapp-img{
+        margin-bottom: 40px;
+    }
+    .text{
+        margin-bottom: 70px;
+        color: #221f1f;
+        line-height: 24px;
+    }
+    .prev-next-buttons{
+        display: flex;
+        width: 100%;
+        max-width: 300px;
+        justify-content: space-between;
+        margin-left: 45px;
+    }
+    .prev-news,
+    .next-news{
+        position: relative;
+
+        a{
+            color: #bb69a2;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &:after{
+            position: absolute;
+            content: '';
+            bottom: 4px;
+            width: 8px;
+            height: 8px;
+            border-bottom: 2px solid #bb69a2;
+            border-left: 2px solid #bb69a2;
+        }
+    }
+    .prev-news:after{
+        left: -35px;
+        transform: rotate(45deg);
+    }
+    .next-news:after{
+        right: -35px;
+        transform: rotate(-135deg);
+    }
+}
 
 
 
+.contact-header-block{
+    background: url('../images/contact-header-block.jpg') top center no-repeat;
+}
+.contact-content{
+    width: 100%;
 
+    .wrapp-contacts{
+        padding-top: 120px;
+        margin-bottom: 110px;
+    }
+    .title{
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 35px;
+        margin-bottom: 80px;
+        position: relative;
+        
+        &:after{
+            position: absolute;
+            left: 50%;
+            margin-left: -25px;
+            bottom: 0;
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #221f1f;
+        }
+        h2{
+            background: linear-gradient(to right, rgba(186,105,162,1) 0%, rgba(186,105,162,1) 30%, rgba(94,75,139,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+    }
+    .contacts-items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-item{
+        width: 100%;
+        max-width: 275px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-left: 65px;
+        
+        a{
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #221f1f;
+            font-weight: 700;
+        }
+        span{
+            font-weight: 300;
+        }
+    }
+    .adres{
+        line-height: 30px;
+    }
+    .icon-contacts{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .mapsss{
+        height: 610px;
+        width: 100%;
+    }
+}
+
+
+
+.vacancies-header-block{
+    background: url('../images/vacancies-header-block.jpg') top center no-repeat;
+}
+.vacancies-content{
+    width: 100%;
+
+    .wrapp-vacanc-items{
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .vacanc-item{
+        width: 100%;
+        max-width: 350px;
+        min-height: 665px;
+        background-color: #fafafa;
+        box-shadow: 0 6px 5px rgba(5, 6, 6, 0.2);
+        padding: 40px 15px 95px;
+        text-align: center;
+        position: relative;
+
+        button{
+            width: 222px;
+            height: 42px;
+            border: 2px solid #bb69a2;
+            background-color: #fafafa;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            margin-left: -112px;
+            color: #bb69a2;
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
+    .title{
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        position: relative;
+        
+        &:after{
+            position: absolute;
+            left: 50%;
+            margin-left: -25px;
+            bottom: 0;
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: #221f1f;
+        }
+        h3{
+            background: linear-gradient(to right, rgba(186,105,162,1) 0%, rgba(186,105,162,1) 30%, rgba(94,75,139,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+    }
+    .text{
+        color: #221f1f;
+        line-height: 18px;
+
+        h4{
+            margin-bottom: 5px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+    }
+}
 
 
 
@@ -681,7 +948,9 @@ a{
 
 
 .services-block-1,
-.news-header-block{
+.news-header-block,
+.contact-header-block,
+.vacancies-header-block{
     width: 100%;
     background-size: cover;
     overflow: hidden;
