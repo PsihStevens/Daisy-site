@@ -62,12 +62,13 @@ function animationBlock(item){
 * GO TO href (smooth)
 */
 function goTo(){
-    $('.header-menu a').click(function(e){
+    $('.header .wrapp-menu a[href="#block-2"]').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
         var target = $(href).offset().top-65;
         $('body,html').animate({scrollTop:target},500);
     });
+    
 }
 
 
@@ -134,18 +135,7 @@ $(document).ready(function() {
 
     $('.footer_placeholder').height($('.footer').outerHeight());
 
-    goTo();
-
-    $('.header-baner-js').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        infinite: false,
-        pauseOnHover: false,
-        autoplaySpeed: 3000,
-        speed: 1000,
-        dots: true,
-    });
+    // goTo();
 
 });
 
